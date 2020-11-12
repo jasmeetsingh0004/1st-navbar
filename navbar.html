@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>navbar</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo">logo</div>
+      <span class="toggle" id="js-toggle">
+        <i class="fa fa-bars"></i>
+      </span>
+
+      <ul class="list" id="js-list">
+        <li><a href="#">home</a></li>
+        <li><a href="#">about us</a></li>
+        <li><a href="#">contact us</a></li>
+        <li><a href="#">more</a></li>
+      </ul>
+
+    </nav>
+  </div>
+  <script>
+    let list = document.getElementById('js-list');
+    let toggle = document.getElementById('js-toggle');
+    toggle.addEventListener('click', function() {
+      list.classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+nav{
+  width: 98vw;
+  background-color: white;
+  box-shadow: 0px 4px 13px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  margin: 10px 10px 10px 10px;
+  font-family: Bebas Neue;
+   }
+ .logo{
+   display: inline-block;
+   /* top: 21px;
+   left: 21px; */
+   padding: 20px;
+  
+ }  
+ .toggle{
+   position: absolute;
+   /* top: 30px; */
+   right: 30px; 
+   padding-top: 11px;
+   font-size: 30px;
+   cursor: pointer;
+ }
+
+ul{
+ list-style: none;
+ font-size: 22px;
+ text-align: center;
+ display: none;
+
+}
+li{
+  padding: 5px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: rgb(28, 172, 255);
+}
+.active{
+  display: block;
+}
+@media screen and (min-width: 768px){
+  .toggle{
+    display: none;
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    font-size: 31px;
+    padding-right: 10px;
+
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  li{
+    padding: 10px;
+  }
+}
+
+/* nav{
+  width: 98%;
+  background-color: white;
+  box-shadow: 0px 4px 13px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  margin: 10px;
+ 
+ 
+}
+
+.fa-bars{
+   position: absolute;
+   top: 4vh;
+   right: 4vw;
+   cursor: pointer; 
+   color: black;
+   font-size:36px;
+  
+  }
+ @media screen and (min-width: 768px){
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-family: Bebas Neue;
+ 
+li{
+  list-style: none;
+  padding: 13px;
+  font-size: 31px;
+  
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: rgb(21, 208, 255);
+  
+}
+.toggle{
+  display: none;
+}
+}  */
